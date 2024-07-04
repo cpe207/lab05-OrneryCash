@@ -1,9 +1,16 @@
+// รหัส นศ.: 660610765
+// ชื่อ-สกุล : ธีรภัทร พิพัฒน์บุณยารัตน์
+
 // define interface for Student object
-/* Your code here */
+interface Student {
+  name: string;
+  score: number;
+}
 
 // assign interface/type to the function definition properly
-function findTopNames(students) {
-  /* Your code here */
+function findTopNames(students: Student[]) {
+  const topStudents: Student[] = students.filter((student) => student.score > 8);
+  return topStudents.map((student) => student.name);
 }
 
 // assign interface/type to the student1 object properly
