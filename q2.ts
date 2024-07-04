@@ -9,8 +9,8 @@ interface Student {
 
 // assign interface/type to the function definition properly
 function findTopNames(students: Student[]) {
-  const topStudents: Student[] = students.filter((student) => student.score > 8);
-  return topStudents.map((student) => student.name);
+  const topStudents: Student[] = students.filter((student: Student) => student.score > 8);
+  return topStudents.map((student: Student) => student.name);
 }
 
 // assign interface/type to the student1 object properly
